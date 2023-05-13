@@ -1,0 +1,1 @@
+//Generate project pages from project content in content.js
