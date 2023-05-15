@@ -1,7 +1,7 @@
-import { projects } from "./content";
+import { projects } from './content';
 
 //Generate project pages from project content in content.js
-const projectDetails = (projectId) => {
+function projectDetails(projectId) {
     const content = document.getElementById('content');
     const project = projects.at(projectId);
     
