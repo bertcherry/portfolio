@@ -7,10 +7,14 @@ const projectDetails = (projectId) => {
     
     const title = document.createElement('h1');
     title.classList.add('project-title');
-    const titleLink = document.createElement('a');
-    titleLink.href = project.titleLink;
-    titleLink.textContent = project.title;
-    title.appendChild(titleLink);
+    if (project.titleLink != undefined) {
+        const titleLink = document.createElement('a');
+        titleLink.href = project.titleLink;
+        titleLink.textContent = project.title;
+        title.appendChild(titleLink);
+    } else {
+        title.textContent = project.title;
+    }
     content.appendChild(title);
 
     const screenshot = document.createElement('img');
