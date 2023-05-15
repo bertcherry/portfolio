@@ -31,6 +31,9 @@ function bioDetails() {
 
     const projectsOverview = document.createElement('div');
     projectsOverview.classList.add('projects-overview');
+    const projectsTitle = document.createElement('h2');
+    projectsTitle.textContent = 'Projects';
+    projectsOverview.appendChild(projectsTitle);
     projects.forEach(project => {
         const projectDiv = document.createElement('div');
 
