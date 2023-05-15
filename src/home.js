@@ -1,4 +1,5 @@
-import { projects, bio } from './content';
+import { bioHeader, bioInfo } from './components';
+import { projects } from './content';
 import { projectDetails } from './projects';
 
 //Homepage generation script as module pulling from content for bio and projects overview
@@ -8,26 +9,8 @@ function generateHome() {
         content.removeChild(content.lastChild);
     }
     
-    const header = document.createElement('div');
-    header.classList.add('bio-header');
-    const name = document.createElement('h1');
-    name.textContent = bio.myName;
-    header.appendChild(name);
-    const title = document.createElement('h2');
-    title.textContent = bio.jobTitle;
-    header.appendChild(title);
-    content.appendChild(header);
-
-    const info = document.createElement('div');
-    info.classList.add('bio-info');
-    const headshot = document.createElement('img');
-    headshot.src = bio.headshot;
-    headshot.alt = bio.headshotAlt;
-    info.appendChild(headshot);
-    const description = document.createElement('div');
-    description.textContent = bio.description;
-    info.appendChild(description);
-    content.appendChild(info);
+    content.appendChild(bioHeader);
+    content.appendChild(bioInfo);
 
     const projectsOverview = document.createElement('div');
     projectsOverview.classList.add('projects-overview');
