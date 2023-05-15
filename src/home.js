@@ -4,6 +4,9 @@ import { projectDetails } from './projects';
 //Homepage generation script as module pulling from content for bio and projects overview
 function bioDetails() {
     const content = document.getElementById('content');
+    while (content.firstChild) {
+        content.removeChild(content.lastChild);
+    }
     
     const header = document.createElement('div');
     header.classList.add('bio-header');

@@ -3,6 +3,10 @@ import { projects } from './content';
 //Generate project pages from project content in content.js
 function projectDetails(projectId) {
     const content = document.getElementById('content');
+    while (content.firstChild) {
+        content.removeChild(content.lastChild);
+    }
+
     const project = projects.at(projectId);
     
     const title = document.createElement('h1');
