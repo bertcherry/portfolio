@@ -2,7 +2,7 @@ import { projects, bio } from './content';
 import { projectDetails } from './projects';
 
 //Homepage generation script as module pulling from content for bio and projects overview
-function bioDetails() {
+function generateHome() {
     const content = document.getElementById('content');
     while (content.firstChild) {
         content.removeChild(content.lastChild);
@@ -59,4 +59,4 @@ function bioDetails() {
     });
 };
 
-export { bioDetails };
+export { generateHome };
