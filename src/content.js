@@ -62,3 +62,11 @@ const projects = [
 
 
 //Store bio content as object to access from home
+const bio = {
+    myName: 'Bert Cherry',
+    jobTitle: 'UX Developer',
+    headshot: BertHeadshot,
+    headshotAlt: 'Bert, a white femme-presenting person smiles in font of a blossoming cherry tree.',
+    description: 'Creative and analytical thinker motivated to keep learning and building.' +
+    ' Former science educator who applies concepts of inquiry and universal design to the UX and web development space.',
+}
