@@ -70,3 +70,5 @@ const bio = {
     description: 'Creative and analytical thinker motivated to keep learning and building.' +
     ' Former science educator who applies concepts of inquiry and universal design to the UX and web development space.',
 }
+
+export { projects, bio };
