@@ -69,6 +69,8 @@ const bio = {
     headshotAlt: 'Bert, a white femme-presenting person smiles in font of a blossoming cherry tree.',
     description: 'Creative and analytical thinker motivated to keep learning and building.' +
     ' Former science educator who applies concepts of inquiry and universal design to the UX and web development space.',
+    tools: ['HTML', 'CSS', 'Javascript', 'Webpack', 'APIs', 'Photoshop/Gimp', 'Illustrator/Inkscape'],
+    resume: BertResume, //Resume file as pdf
 }
 
 export { projects, bio };
