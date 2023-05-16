@@ -22,11 +22,14 @@ function projectDetails(e) {
     }
     content.appendChild(title);
 
+    const screenshotDiv = document.createElement('div');
+    screenshotDiv.classList.add('img-container');
+    screenshotDiv.classList.add('project-screenshot');
     const screenshot = document.createElement('img');
-    screenshot.classList.add('project-screenshot');
     screenshot.src = project.screenshot;
     screenshot.alt = project.screenshotAlt;
-    content.appendChild(screenshot);
+    screenshotDiv.appendChild(screenshot);
+    content.appendChild(screenshotDiv);
 
     const summary = document.createElement('div');
     summary.classList.add('project-section');

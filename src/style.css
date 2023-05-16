@@ -34,7 +34,7 @@ body, html {
     --shadow: #787d80;
 }
 
-h3 {
+h2, h3 {
     margin-bottom: 10px;
 }
 
@@ -114,4 +114,15 @@ a:hover {
 
 .project-container > .img-container {
     flex: 0 1 400px;
+}
+
+/* Project details */
+.project-screenshot {
+    max-width: 800px;
+    margin: 10px;
+}
+
+.project-section {
+    width: 75%;
+    margin-bottom: 20px;
 }
