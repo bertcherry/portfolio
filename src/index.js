@@ -1,3 +1,4 @@
+import './style.css';
 import { generateBio } from './about';
 import { generateHome } from './home';
 
