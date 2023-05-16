@@ -61,7 +61,7 @@ const projects = [
 ];
 
 
-//Store bio content as object to access from home
+//Store bio content as object to access from home and about
 const bio = {
     myName: 'Bert Cherry',
     jobTitle: 'UX Developer',
@@ -71,6 +71,6 @@ const bio = {
     ' Former science educator who applies concepts of inquiry and universal design to the UX and web development space.',
     tools: ['HTML', 'CSS', 'Javascript', 'Webpack', 'APIs', 'Photoshop/Gimp', 'Illustrator/Inkscape'],
     resume: BertResume, //Resume file as pdf
-}
+};
 
 export { projects, bio };
