@@ -22,7 +22,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     width: 100%;
 }
 
@@ -67,10 +67,11 @@ a:hover {
 .bio-info {
     display: flex;
     flex-wrap: wrap;
-    max-width: 50%;
+    width: minmax(50%, 400px);
     gap: 40px;
     align-items: center;
     justify-content: center;
+    margin-top: -20px;
 }
 
 .bio-info > .img-container {
