@@ -36,13 +36,15 @@ function generateHome() {
         projectInfo.appendChild(projectSummary);
         projectDiv.appendChild(projectInfo);
 
-        const screenshotDiv = document.createElement('div');
-        screenshotDiv.classList.add('img-container');
+        const screenshotCont = document.createElement('a');
+        screenshotCont.id = projectId;
+        screenshotCont.addEventListener('click', projectDetails);
+        screenshotCont.classList.add('img-container');
         const screenshot = document.createElement('img');
         screenshot.src = project.screenshot;
         screenshot.alt = project.screenshotAlt;
-        screenshotDiv.appendChild(screenshot);
-        projectDiv.appendChild(screenshotDiv);
+        screenshotCont.appendChild(screenshot);
+        projectDiv.appendChild(screenshotCont);
 
         projectsOverview.appendChild(projectDiv);
     });
