@@ -27,7 +27,7 @@ body, html {
 }
 
 :root {
-    --bg: #DFE0E2;
+    --bg: #F4F4F5;
     --darkest: #111e2f;
     --accent: #2d3c58;
     --dark: #333743;
@@ -43,6 +43,7 @@ h2, h3 {
     display: flex;
     list-style-type: none;
     gap: 2ch;
+    margin-bottom: 40px;
 }
 
 /* Nav and project links */
