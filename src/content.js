@@ -1,7 +1,13 @@
+import SUScreenshot from './SUScreenshot.png';
+import HotalingScreenshot from './HotalingScreenshot.png';
+import WeatherScreenshot from './WeatherPlaceholder.jpg';
+import BertResume from './CherryResume2023.pdf';
+import BertHeadshot from './BertHeadshot.JPEG';
+
 //Store portfolio item content as array of objects to access from projects and home
 const projects = [
     { 
-        title: 'Strive & Uplift Website',
+        title: 'Strive & Uplift',
         titleLink: 'https://www.striveanduplift.com/',
         screenshot: SUScreenshot,
         screenshotAlt: 'Screenshot of the Strive & Uplift website, in bright blue, orange, and yellow color scheme' +
@@ -49,9 +55,8 @@ const projects = [
             ' on what they\'ll need to pack for the day.',
         audience: 'The primary demographic is school students who participate in after school sports, especially outdoor sports.' +
             ' The survey plan focuses on high schoolers, though further surveys could find ways to increase useability for a younger audience.',
-        details: 'My plan for this project is to begin with a general survey for 10-15 students asking about their use of their phone`s weather app.' +
+        details: 'My plan for this project is to begin with a general survey for 10-15 students asking about their use of their phone\'s weather app.' +
             ' I\'ll also ask about the basic features proposed for this app, and what elements would feel helpful to them on a 5-point scale.' +
-            ' [Include the survey questions once generated]' +
             ' I will then integrate student feedback with universal design principles for accessibility to build the weather app.' +
             ' Once the app is built, I will return to a smaller subset of the original group to test the app and provide' +
             ' initial impressions from their first user experience in getting the app set up.' +
