@@ -18,6 +18,7 @@ function generateHome() {
     projectsTitle.textContent = 'Projects';
     projectsOverview.appendChild(projectsTitle);
     projects.forEach(project => {
+        const projectId = projects.indexOf(project);
         const projectDiv = document.createElement('div');
 
         const screenshot = document.createElement('img');
@@ -29,8 +30,9 @@ function generateHome() {
         projectInfo.classList.add('project-info');
         const title = document.createElement('h3');
         const titleLink = document.createElement('a');
+        titleLink.id = projectId;
         titleLink.textContent = project.title;
-        //titleLink.addEventListener('click', projectDetails(projects.indexOf(project)));
+        titleLink.addEventListener('click', projectDetails);
         title.appendChild(titleLink);
         projectInfo.appendChild(title);
         const projectSummary = document.createElement('div');

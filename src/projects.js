@@ -1,7 +1,8 @@
 import { projects } from './content';
 
 //Generate project pages from project content in content.js
-function projectDetails(projectId) {
+function projectDetails(e) {
+    const projectId = e.currentTarget.id;
     const content = document.getElementById('content');
     while (content.firstChild) {
         content.removeChild(content.lastChild);
