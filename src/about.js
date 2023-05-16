@@ -8,8 +8,8 @@ function generateBio() {
         content.removeChild(content.lastChild);
     }
 
-    content.appendChild(bioHeader);
-    content.appendChild(bioInfo);
+    bioHeader();
+    bioInfo();
 
     const bioTools = document.createElement('div');
     const toolsTitle = document.createElement('h2');

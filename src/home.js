@@ -9,8 +9,8 @@ function generateHome() {
         content.removeChild(content.lastChild);
     }
     
-    content.appendChild(bioHeader);
-    content.appendChild(bioInfo);
+    bioHeader();
+    bioInfo();
 
     const projectsOverview = document.createElement('div');
     projectsOverview.classList.add('projects-overview');
@@ -27,10 +27,10 @@ function generateHome() {
 
         const projectInfo = document.createElement('div');
         projectInfo.classList.add('project-info');
-        const title = document.createElement('h2');
+        const title = document.createElement('h3');
         const titleLink = document.createElement('a');
         titleLink.textContent = project.title;
-        titleLink.addEventListener('click', projectDetails(projects.indexOf(project)));
+        //titleLink.addEventListener('click', projectDetails(projects.indexOf(project)));
         title.appendChild(titleLink);
         projectInfo.appendChild(title);
         const projectSummary = document.createElement('div');
@@ -40,6 +40,7 @@ function generateHome() {
 
         projectsOverview.appendChild(projectDiv);
     });
+    content.appendChild(projectsOverview);
 };
 
 export { generateHome };

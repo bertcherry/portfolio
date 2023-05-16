@@ -1,6 +1,7 @@
 import { bio } from './content';
 
 function bioHeader() {
+    const content = document.getElementById('content');
     const header = document.createElement('div');
     header.classList.add('bio-header');
     const name = document.createElement('h1');
@@ -9,10 +10,11 @@ function bioHeader() {
     const title = document.createElement('h2');
     title.textContent = bio.jobTitle;
     header.appendChild(title);
-    return header;
+    content.appendChild(header);
 };
 
 function bioInfo() {
+    const content = document.getElementById('content');
     const info = document.createElement('div');
     info.classList.add('bio-info');
     const headshot = document.createElement('img');
@@ -22,7 +24,7 @@ function bioInfo() {
     const description = document.createElement('div');
     description.textContent = bio.description;
     info.appendChild(description);
-    return info;
+    content.appendChild(info);
 }
 
 export { bioHeader, bioInfo };
