@@ -88,9 +88,6 @@ a:hover {
 /* Bio details */
 .bio-tools {
     align-content: baseline;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     width: 40%;
 }
 

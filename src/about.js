@@ -14,7 +14,7 @@ const generateBio = (e) => {
 
     const bioTools = document.createElement('div');
     bioTools.classList.add('bio-tools');
-    const toolsTitle = document.createElement('h2');
+    const toolsTitle = document.createElement('h3');
     bioTools.appendChild(toolsTitle);
     toolsTitle.textContent = 'Tools';
     const toolsList = document.createElement('ul');
