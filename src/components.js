@@ -17,11 +17,15 @@ function bioInfo() {
     const content = document.getElementById('content');
     const info = document.createElement('div');
     info.classList.add('bio-info');
+    const headshotDiv = document.createElement('div');
+    headshotDiv.classList.add('img-container');
     const headshot = document.createElement('img');
     headshot.src = bio.headshot;
     headshot.alt = bio.headshotAlt;
-    info.appendChild(headshot);
+    headshotDiv.appendChild(headshot);
+    info.appendChild(headshotDiv);
     const description = document.createElement('div');
+    description.classList.add('bio-description');
     description.textContent = bio.description;
     info.appendChild(description);
     content.appendChild(info);
