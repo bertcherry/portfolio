@@ -14,14 +14,14 @@ const projects = [
             ' features a top right menu and central logo with friendly "Explore our Services" button.',
         summary: 'Ground up build of webpage for two main client groups. First, for prospective members to find services that fit their needs.' +
             ' Then, for active members to enroll in classes and/or access virtual content.',
-        audience: 'There are two typical client types for Strive & Uplift -- someone looking for a community gym space,' +
+        audience: 'There are two typical client types for Strive & Uplift - someone looking for a community gym space,' +
             ' and someone looking for online programming to train for ultimate frisbee.' +
             ' Both groups tend to be interested in a queer-friendly and body-positive training environment.' +
             ' Clients range in age from youth to seniors; some clients are not tech-savvy, while others work in tech themselves.',
         details: 'During the 2020 redesign of the website,' +
             ' I took into consideration coach feedback on how they wanted themselves and their services to be represented,' +
             ' as decision making trends toward collective processes.' +
-            ' Accessbility is a core value for Strive & Uplift, and this extends to the online space.' +
+            ' Accessibility is a core value for Strive & Uplift, and this extends to the online space.' +
             ' The color themes were chosen based on the established Strive & Uplift logo,' +
             ' conforming with WCAG AAA guidelines for text and interface readability, and A/B tested with the coaches.' +
             ' Mobile useability is a factor, with screen reader friendly options for pricing tables and zoomable images.' +
