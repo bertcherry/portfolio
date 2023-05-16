@@ -80,3 +80,12 @@ a:hover {
 .bio-info > .bio-description {
     flex: 0 1 400px;
 }
+
+/* Bio details */
+.bio-tools {
+    align-content: baseline;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}

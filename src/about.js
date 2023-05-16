@@ -13,6 +13,7 @@ const generateBio = (e) => {
     bioInfo();
 
     const bioTools = document.createElement('div');
+    bioTools.classList.add('bio-tools');
     const toolsTitle = document.createElement('h2');
     bioTools.appendChild(toolsTitle);
     toolsTitle.textContent = 'Tools';
