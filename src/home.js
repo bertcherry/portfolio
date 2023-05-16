@@ -20,11 +20,7 @@ function generateHome() {
     projects.forEach(project => {
         const projectId = projects.indexOf(project);
         const projectDiv = document.createElement('div');
-
-        const screenshot = document.createElement('img');
-        screenshot.src = project.screenshot;
-        screenshot.alt = project.screenshotAlt;
-        projectDiv.appendChild(screenshot);
+        projectDiv.classList.add('project-container');
 
         const projectInfo = document.createElement('div');
         projectInfo.classList.add('project-info');
@@ -39,6 +35,14 @@ function generateHome() {
         projectSummary.textContent = project.summary;
         projectInfo.appendChild(projectSummary);
         projectDiv.appendChild(projectInfo);
+
+        const screenshotDiv = document.createElement('div');
+        screenshotDiv.classList.add('img-container');
+        const screenshot = document.createElement('img');
+        screenshot.src = project.screenshot;
+        screenshot.alt = project.screenshotAlt;
+        screenshotDiv.appendChild(screenshot);
+        projectDiv.appendChild(screenshotDiv);
 
         projectsOverview.appendChild(projectDiv);
     });
