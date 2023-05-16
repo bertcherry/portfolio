@@ -22,14 +22,20 @@ function projectDetails(e) {
     }
     content.appendChild(title);
 
-    const screenshotDiv = document.createElement('div');
-    screenshotDiv.classList.add('img-container');
-    screenshotDiv.classList.add('project-screenshot');
+    let screenshotCont;
+    if (project.titleLink != undefined) {
+        screenshotCont = document.createElement('a');
+        screenshotCont.href = project.titleLink;
+    } else {
+        screenshotCont = document.createElement('div');
+    }
+    screenshotCont.classList.add('img-container');
+    screenshotCont.classList.add('project-screenshot');
     const screenshot = document.createElement('img');
     screenshot.src = project.screenshot;
     screenshot.alt = project.screenshotAlt;
-    screenshotDiv.appendChild(screenshot);
-    content.appendChild(screenshotDiv);
+    screenshotCont.appendChild(screenshot);
+    content.appendChild(screenshotCont);
 
     const summary = document.createElement('div');
     summary.classList.add('project-section');
