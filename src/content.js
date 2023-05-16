@@ -1,7 +1,7 @@
 import SUScreenshot from './SUScreenshot.png';
 import HotalingScreenshot from './HotalingScreenshot.png';
 import WeatherScreenshot from './WeatherPlaceholder.jpg';
-import BertResume from './CherryResume2023.pdf';
+//import BertResume from './CherryResume2023.pdf';
 import BertHeadshot from './BertHeadshot.JPEG';
 
 //Store portfolio item content as array of objects to access from projects and home
@@ -75,7 +75,7 @@ const bio = {
     description: 'Creative and analytical thinker motivated to keep learning and building.' +
     ' Former science educator who applies concepts of inquiry and universal design to the UX and web development space.',
     tools: ['HTML', 'CSS', 'Javascript', 'Webpack', 'APIs', 'Photoshop/Gimp', 'Illustrator/Inkscape'],
-    resume: BertResume, //Resume file as pdf
+    //resume: BertResume, //Resume file as pdf
 };
 
 export { projects, bio };
