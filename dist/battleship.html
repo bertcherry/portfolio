@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bert Cherry - Battleship></title>
+</head>
+<body>
+    <div class="bio-header">
+        <h1><a href="index.html">Bert Cherry</a></h1>
+        <h2>UX Developer</h2>
+    </div>
+
+    <section aria-label="project info" class="project-page">
+        <h1 class="project-title">Battleship Game</h1>
+        <a href="https://bertcherry.github.io/battleship/" class="img-container project-screenshot"><img src="BattleshipScreenshot.png" alt="Battleship web app in classic neon and black arcade game style."></a>
+        <div class="project-section project-summary">
+            <h2>Project Summary</h2>
+            <div>
+                Student work from The Odin Project to implement Jest for Javascript testing, as well as drag and drop events and basic computer player logic.
+            </div>
+        </div>
+        <div class="project-section project-audience">
+            <h2>Audience</h2>
+            <div>The audience for this game needs to interact with the gameboard through use of mouse or mobile touch interaction and through keyboard interaction. It is not accessible via screen reader or keyboard only use. It is intended for sighted users.</div>
+        </div>
+        <div class="project-section project-details">
+            <h2>Details</h2>
+            <div>The purpose of this project in the curriculum was to implement Jest for unit testing to set up the initial game logic before building DOM elements.</div>
+            <div>After successfully initiating the game via testing, I layered in the DOM components, going for a classic arcade font and dark mode style contrast between text and background.</div>
+            <div>Users can play against a computer or another player via two-player mode. The game interface for two-player mode includes a "pass screen" modal to hide the player boards from each other and therefore allow fair play from one device.</div>
+            <div>In either mode, human players place their ships one by one using drag and drop methods. If a player tries to illegally place a ship, for example in a direction that will run off the board, that specific ship placement resets.</div>
+            <div>Players make attacks by clicking on the enemy board in the interface. Misses, hits, sunk ships, and the game end are signaled through the modal and with color and icon changes on the enemy gameboard. Received attacks are similarly designated with changes to the cells on the player's board.</div>
+            <div>The computer player has simple logic that reads from the previous successful hit and attempts an attack on an adjacent cell. If the last hit sunk a ship or there is no previous successful attack, the computer makes a random attack.</div>
+            <div>Future improvements to this game would include keyboard accessibility and more refined computer logic that reads from an array of last successful hits to complete a line and fully sink a ship when the first hit is in the middle of the craft.</div>
+        </div>
+    </section>
+
+    <footer aria-label="Contact">
+        <h2>Contact Me</h2>
+        <a href="mailto:bert.m.cherry@gmail.com">bert.m.cherry@gmail.com</a>
+        <div class="bio-links">  
+            <a href="https://github.com/bertcherry" aria-label="github" class="icon-container"><img src="github.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/bert-cherry-709071274/"  aria-label="linkedin" class="icon-container"><img src="linkedin.svg" alt=""></a>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
