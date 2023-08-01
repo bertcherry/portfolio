@@ -118,6 +118,16 @@ a:hover {
     margin: 20px 40px;
 }
 
+.icon-container {
+    display: inline-block;
+    height: 1rem;
+}
+
+.icon-container > img {
+    object-fit: contain;
+    height: 100%;
+}
+
 /* Project details */
 .project-screenshot {
     max-width: 800px;
