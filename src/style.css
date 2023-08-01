@@ -169,14 +169,31 @@ a:hover {
 }
 
 /* Project details */
+.project-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    background-color: var(--white);
+    border: solid 1px var(--dark);
+    border-radius: 3px;
+    box-shadow: 2px 3px 3px var(--shadow);
+    margin: 20px;
+    padding: 20px;
+}
+
 .project-screenshot {
     max-width: 800px;
     margin: 10px;
 }
 
 .project-section {
-    width: 75%;
     margin-bottom: 20px;
+}
+
+.project-section > * {
+    margin-bottom: 10px;
 }
 
 /* Contact footer */
