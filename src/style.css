@@ -61,11 +61,11 @@ a:hover {
 
 .bio {
     width: 100vw;
-    margin-top: -20px;
+    margin-top: -50px;
     background-color: var(--darkest);
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 .bio-container {
@@ -99,9 +99,8 @@ a:hover {
 }
 
 /* Bio details */
-.bio-tools {
-    align-content: baseline;
-    width: 40%;
+.bio-description > div {
+    margin-bottom: 20px;
 }
 
 /* Projects overview on homepage*/
