@@ -165,3 +165,12 @@ a:hover {
     width: 75%;
     margin-bottom: 20px;
 }
+
+/* Contact footer */
+footer {
+    background-color: var(--darkest);
+    color: var(--white);
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+}
