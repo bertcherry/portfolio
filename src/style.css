@@ -65,7 +65,7 @@ a:hover {
     gap: .5rem;
 }
 
-.bio-info {
+.bio {
     display: flex;
     flex-wrap: wrap;
     width: minmax(50%, 400px);
@@ -75,7 +75,7 @@ a:hover {
     margin-top: -20px;
 }
 
-.bio-info > .img-container {
+.bio > .img-container {
     flex: 0 1 200px;
 }
 
@@ -83,7 +83,7 @@ a:hover {
     width: 100%;
 }
 
-.bio-info > .bio-description {
+.bio > .bio-info {
     flex: 0 1 400px;
 }
 
